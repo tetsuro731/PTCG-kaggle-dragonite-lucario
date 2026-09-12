@@ -1,0 +1,14 @@
+{
+  "name": "lucario_v3",
+  "training_module": "training.hooks",
+  "feature_module": "submission.features",
+  "rule_policy_module": "training.lucario_v3.policy",
+  "required_cards": {
+    "678": 4,
+    "677": 3,
+    "1121": 4,
+    "1213": 4
+  },
+  "production_model": "submission/model_data.py",
+  "production_manifest": "artifacts/model_manifest.json"
+}

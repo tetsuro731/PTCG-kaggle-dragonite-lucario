@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="460" viewBox="0 0 1800 460" role="img" aria-labelledby="title desc">
+  <title id="title">Chronological split by replay collection period</title>
+  <desc id="desc">Replay collection periods progress from past to future along the horizontal axis. Separate periods are used for training, Optuna tuning, and validation.</desc>
+
+  <rect width="1800" height="460" fill="#ffffff"/>
+
+  <!-- Conceptual widths: 6:1.5:1.5. -->
+  <rect x="120" y="70" width="1040" height="150" fill="#246b9e"/>
+  <rect x="1160" y="70" width="260" height="150" fill="#df5b32"/>
+  <rect x="1420" y="70" width="260" height="150" fill="#2f855a"/>
+
+  <line x1="1160" y1="70" x2="1160" y2="220" stroke="#ffffff" stroke-width="3" opacity="0.9"/>
+  <line x1="1420" y1="70" x2="1420" y2="220" stroke="#ffffff" stroke-width="3" opacity="0.9"/>
+
+  <text x="640" y="153" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="0">Training</text>
+
+  <text x="1290" y="139" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="0">Hyperparameter</text>
+  <text x="1290" y="173" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="0">tuning (Optuna)</text>
+
+  <text x="1550" y="153" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="0">Validation</text>
+
+  <path d="M120 232 V220 Q640 270 1160 220 V232" fill="none" stroke="#246b9e" stroke-width="3"/>
+  <path d="M1160 232 V220 Q1290 270 1420 220 V232" fill="none" stroke="#df5b32" stroke-width="3"/>
+  <path d="M1420 232 V220 Q1550 270 1680 220 V232" fill="none" stroke="#2f855a" stroke-width="3"/>
+
+  <text x="640" y="285" text-anchor="middle" fill="#246b9e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="0">~1 week</text>
+  <text x="1290" y="285" text-anchor="middle" fill="#c74620" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="0">1 day</text>
+  <text x="1550" y="285" text-anchor="middle" fill="#257149" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="0">1 day</text>
+
+  <line x1="120" y1="320" x2="1650" y2="320" stroke="#323b45" stroke-width="3"/>
+  <path d="M1680 320 L1648 304 L1648 336 Z" fill="#323b45"/>
+  <text x="900" y="365" text-anchor="middle" fill="#17212b" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="0">Time</text>
+
+  <text x="900" y="442" text-anchor="middle" fill="#202020" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="26" letter-spacing="0">Fig. 4. Data split by collection period</text>
+</svg>

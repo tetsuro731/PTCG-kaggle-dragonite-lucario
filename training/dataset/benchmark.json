@@ -1,0 +1,125 @@
+{
+  "command": "See README.md: Training from Included Data",
+  "environment": {
+    "cpu": "Intel Core i7-12700K",
+    "threads": 16,
+    "python": "3.11.15",
+    "catboost": "1.2.10",
+    "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39"
+  },
+  "dataset": "training/dataset",
+  "episodes": 1558,
+  "decisions": 90029,
+  "rows": 688908,
+  "feature_count": 740,
+  "tree_count": 3373,
+  "parameters": {
+    "iterations": 3373,
+    "depth": 9,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3.748639774100797,
+    "random_strength": 0.379062406483889,
+    "positive_class_weight": 2.0963135011151595,
+    "subsample": 0.7668472842334632,
+    "rsm": 0.966539533174889,
+    "early_stopping_rounds": 100,
+    "threads": 16,
+    "valid_fraction": 0.2,
+    "seed": 7,
+    "validation_episodes": null,
+    "final_fit": true
+  },
+  "timing_seconds": {
+    "fit": 340.3598372550041,
+    "elapsed_before_artifact_write": 347.48084305098746
+  },
+  "metrics": {
+    "top1_all": 0.8267891457197125,
+    "top1_max_count_1": 0.8169227439948064,
+    "teacher_set_all": 0.8143487098601562,
+    "policy_set_all": 0.812949160825956,
+    "rule_max_count_1": 0.5771598259155065,
+    "contexts": {
+      "0": {
+        "decisions": 55233,
+        "model_top1": 0.818930711712201,
+        "model_teacher_set": 0.818930711712201,
+        "model_policy_set": 0.818930711712201,
+        "rule_policy_set": 0.5182228015860084
+      },
+      "3": {
+        "decisions": 4434,
+        "model_top1": 0.8703202525935949,
+        "model_teacher_set": 0.8703202525935949,
+        "model_policy_set": 0.8703202525935949,
+        "rule_policy_set": 0.7212449255751014
+      },
+      "4": {
+        "decisions": 26,
+        "model_top1": 0.8076923076923077,
+        "model_teacher_set": 0.8076923076923077,
+        "model_policy_set": 0.8076923076923077,
+        "rule_policy_set": 0.7692307692307693
+      },
+      "5": {
+        "decisions": 1,
+        "model_top1": 0.0,
+        "model_teacher_set": 0.0,
+        "model_policy_set": 0.0,
+        "rule_policy_set": 0.0
+      },
+      "7": {
+        "decisions": 13972,
+        "model_top1": 0.7747638133409677,
+        "model_teacher_set": 0.7467077011165187,
+        "model_policy_set": 0.7467077011165187,
+        "rule_policy_set": 0.6457200114514744
+      },
+      "8": {
+        "decisions": 4839,
+        "model_top1": 0.878073982227733,
+        "model_teacher_set": 0.7768133911965283,
+        "model_policy_set": 0.7768133911965283,
+        "rule_policy_set": 0.5637528414961769
+      },
+      "17": {
+        "decisions": 205,
+        "model_top1": 0.9707317073170731,
+        "model_teacher_set": 0.9707317073170731,
+        "model_policy_set": 0.9707317073170731,
+        "rule_policy_set": 0.6292682926829268
+      },
+      "21": {
+        "decisions": 6846,
+        "model_top1": 0.8488168273444348,
+        "model_teacher_set": 0.8488168273444348,
+        "model_policy_set": 0.8488168273444348,
+        "rule_policy_set": 0.693981887233421
+      },
+      "22": {
+        "decisions": 2361,
+        "model_top1": 0.9652689538331216,
+        "model_teacher_set": 0.8644642100804744,
+        "model_policy_set": 0.8110969927996612,
+        "rule_policy_set": 0.8089792460821685
+      },
+      "30": {
+        "decisions": 774,
+        "model_top1": 0.8152454780361758,
+        "model_teacher_set": 0.8152454780361758,
+        "model_policy_set": 0.8152454780361758,
+        "rule_policy_set": 0.6408268733850129
+      },
+      "43": {
+        "decisions": 1338,
+        "model_top1": 0.9932735426008968,
+        "model_teacher_set": 0.9932735426008968,
+        "model_policy_set": 0.9932735426008968,
+        "rule_policy_set": 0.9932735426008968
+      }
+    },
+    "auc": 0.9756716214770985,
+    "scope": "training"
+  },
+  "matches_original_manifest_metrics": true
+}
