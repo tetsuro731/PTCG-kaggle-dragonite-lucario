@@ -1,0 +1,79 @@
+{
+  "source_repository": "PTCG-kaggle-tetsuro731",
+  "source_dataset": "data/catboost/lucario_v3_combined/datasets/20260802-14-top20-v8-window",
+  "date_from": "2026-08-02",
+  "date_to": "2026-08-14",
+  "feature_version": 8,
+  "feature_count": 740,
+  "episodes": 1558,
+  "decisions": 90029,
+  "rows": 688908,
+  "storage": "np.savez_compressed; all source arrays and dtypes preserved, verified elementwise",
+  "shards": [
+    {
+      "name": "rows_2026-08-02.npz",
+      "bytes": 2239740,
+      "sha256": "af3d928002ac24fcf85d084348d4978cf908d3371cfe966c664f0873322f18df"
+    },
+    {
+      "name": "rows_2026-08-03.npz",
+      "bytes": 4014968,
+      "sha256": "ed0bd5b3731c372e2af40cec7dd5f8358600c817e4b65e54547f4118dd7d8a3a"
+    },
+    {
+      "name": "rows_2026-08-04.npz",
+      "bytes": 3319320,
+      "sha256": "74bb3dfa5c2204637f1d1b70a6fa77b77193eb5267c2dd0dbc4cf9d80403fafe"
+    },
+    {
+      "name": "rows_2026-08-05.npz",
+      "bytes": 2215798,
+      "sha256": "a694d495d4d4d9e5f551e55674c949bbb48b56edbf5fcacf86cb08c8551a1b3f"
+    },
+    {
+      "name": "rows_2026-08-06.npz",
+      "bytes": 597622,
+      "sha256": "5fcd803bc3c3191db35de89cf30805929bf6f7d69532a903bd885fd9f63e28ef"
+    },
+    {
+      "name": "rows_2026-08-07.npz",
+      "bytes": 3777169,
+      "sha256": "3fa2ecbe2a0cc78e07163dbbdb751c848b838930f563a5612d9be5dc54950fc7"
+    },
+    {
+      "name": "rows_2026-08-08.npz",
+      "bytes": 2802703,
+      "sha256": "4414e32bfa4714b6abc3d36906d1c17fdaa5fe7671a0e4b25875780d32b281c2"
+    },
+    {
+      "name": "rows_2026-08-09.npz",
+      "bytes": 2188392,
+      "sha256": "2bd14088c4d468f498262fa9a6bede53e486ee2ab32a1df354fd23a79474fb88"
+    },
+    {
+      "name": "rows_2026-08-10.npz",
+      "bytes": 4622471,
+      "sha256": "edcb803e8e6346e2174779b9887952ddb4d2a76e79c3a6ee77accb9e0acc34a7"
+    },
+    {
+      "name": "rows_2026-08-11.npz",
+      "bytes": 4154964,
+      "sha256": "d27bab03e39c35372aab06ffa25889ec7dd5d762ea278c941e28f4ec4e861401"
+    },
+    {
+      "name": "rows_2026-08-12.npz",
+      "bytes": 2863849,
+      "sha256": "a13db44c7d90811cd25392db161825b686ffebf64958553a937bc66f9d424f72"
+    },
+    {
+      "name": "rows_2026-08-13.npz",
+      "bytes": 1836997,
+      "sha256": "6b36284e47be5cec4d28725ec39bddecd687241cac38793da4dce0d6647e1041"
+    },
+    {
+      "name": "rows_2026-08-14.npz",
+      "bytes": 1123166,
+      "sha256": "0798d6e7a46e797ca3391c081db10fca2438f5a7aaaa846533e0cdebe8e15b59"
+    }
+  ]
+}

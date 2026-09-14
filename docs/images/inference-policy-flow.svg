@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+  <title id="title">Inference policy flow</title>
+  <desc id="desc">The agent routes legal actions to CatBoost for validated contexts and to the rule-based policy otherwise, then ranks candidates and selects an action.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="28" markerHeight="28" refX="28" refY="14" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 28 28">
+      <path d="M0 0 L28 14 L0 28 Z" fill="#56616d"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="760" fill="#ffffff"/>
+
+  <rect x="35" y="70" width="320" height="500" rx="8" fill="#edf5fa" stroke="#246b9e" stroke-width="3"/>
+  <image x="55" y="90" width="280" height="360" href="board_ex1.png" preserveAspectRatio="xMidYMid slice"/>
+  <text x="195" y="525" text-anchor="middle" fill="#17212b" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="0">Board state</text>
+
+  <rect x="650" y="50" width="400" height="280" rx="8" fill="#ffffff" stroke="#e3b300" stroke-width="4"/>
+  <g transform="translate(700 78)">
+    <polygon points="0,0 78,0 108,50 78,100 0,100" fill="#ffcc00"/>
+    <line x1="50" y1="67" x2="28" y2="42" stroke="#ffffff" stroke-width="4"/>
+    <line x1="50" y1="67" x2="49" y2="27" stroke="#ffffff" stroke-width="4"/>
+    <line x1="50" y1="67" x2="72" y2="26" stroke="#e60012" stroke-width="4"/>
+    <line x1="50" y1="67" x2="87" y2="43" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="28" cy="42" r="8" fill="#ffffff"/>
+    <circle cx="49" cy="27" r="11" fill="#ffffff"/>
+    <circle cx="72" cy="26" r="11" fill="#e60012"/>
+    <circle cx="87" cy="43" r="8" fill="#ffffff"/>
+    <circle cx="50" cy="67" r="17" fill="#e60012"/>
+  </g>
+
+  <text x="915" y="125" text-anchor="middle" fill="#111820" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="0">CatBoost</text>
+  <text x="915" y="163" text-anchor="middle" fill="#111820" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="0">model</text>
+  <text x="850" y="232" text-anchor="middle" fill="#59636e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="0">MAIN · TO_HAND · DISCARD</text>
+  <text x="850" y="270" text-anchor="middle" fill="#59636e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="0">ATTACH_FROM · SWITCH</text>
+
+  <rect x="650" y="400" width="400" height="250" rx="8" fill="#f1f7f3" stroke="#2f855a" stroke-width="4"/>
+  <text x="850" y="505" text-anchor="middle" fill="#17212b" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="0">Rule-based policy</text>
+  <text x="850" y="558" text-anchor="middle" fill="#59636e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="0">HEAL · ATTACH_TO</text>
+  <text x="850" y="596" text-anchor="middle" fill="#59636e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="0">DISCARD_ENERGY · ACTIVATE</text>
+
+  <rect x="1190" y="190" width="280" height="300" rx="8" fill="#173f5f"/>
+  <text x="1330" y="250" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="0">Rank candidates</text>
+  <text x="1330" y="290" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="0">and select</text>
+  <line x1="1240" y1="320" x2="1420" y2="320" stroke="#85a8c0" stroke-width="2"/>
+  <text x="1330" y="355" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="0">e.g., Attack with Lucario</text>
+  <image x="1289" y="368" width="82" height="114" href="lucario.png" preserveAspectRatio="xMidYMid meet"/>
+
+  <path d="M355 360 H500 V190 H650" fill="none" stroke="#56616d" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M500 360 V525 H650" fill="none" stroke="#56616d" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <text x="535" y="142" text-anchor="middle" fill="#a56b00" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="0">Feature extraction</text>
+  <text x="535" y="169" text-anchor="middle" fill="#a56b00" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="0">(740 features)</text>
+
+  <path d="M1050 190 H1120 V280 H1190" fill="none" stroke="#56616d" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="1120" y="165" text-anchor="middle" fill="#a56b00" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="0">Inference</text>
+  <path d="M1050 525 H1120 V420 H1190" fill="none" stroke="#56616d" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="390" y="302" width="220" height="42" fill="#ffffff"/>
+  <text x="500" y="330" text-anchor="middle" fill="#59636e" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="0">Decision context</text>
+
+  <text x="750" y="742" text-anchor="middle" fill="#202020" font-family="Helvetica Neue, Helvetica, sans-serif" font-size="36" letter-spacing="0">Fig. 1. Hybrid inference policy</text>
+</svg>
